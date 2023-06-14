@@ -2,7 +2,11 @@
 import { getWeather } from "./weather.js"
 import { ICON_MAP } from "./iconMap.js"
 
-window.addEventListener('load', function () {
+
+const button = document.getElementById('myButton');
+button.addEventListener('click', loadData);
+
+function loadData() {
   navigator.geolocation.getCurrentPosition(positionSuccess, positionError)
 
   function positionSuccess({ coords }) {
@@ -85,4 +89,4 @@ window.addEventListener('load', function () {
       hourlySection.append(element)
     })
   }
-})
+}
