@@ -41,7 +41,7 @@ function loadData() {
 
   function getIconUrl(iconCode) {
     console.log(`/icons/${ICON_MAP.get(iconCode)}.png`)
-    return `/icons/${ICON_MAP.get(iconCode)}.png`
+    return `./icons/${ICON_MAP.get(iconCode)}.png`
   }
 
   const currentIcon = document.querySelector("[data-current-icon]")
