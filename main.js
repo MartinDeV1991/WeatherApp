@@ -47,7 +47,8 @@ function loadData() {
   const currentIcon = document.querySelector("[data-current-icon]")
 
   function renderCurrentWeather(current) {
-    currentIcon.src = getIconUrl(current.iconCode)
+    // currentIcon.src = getIconUrl(current.iconCode)
+    currentIcon.src = "/icons/cloud.png"
     setValue("current-temp", current.currentTemp)
     setValue("current-high", current.highTemp)
     setValue("current-low", current.lowTemp)
